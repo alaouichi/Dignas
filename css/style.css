@@ -1,0 +1,1006 @@
+/* #FFFAF0
+# 984B17
+#F4DAA5
+# EAC272
+# F2E0BB */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    /* font-family: 'Dancing Script', cursive;
+       font-family: 'Open Sans', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height:  100vh;
+    overflow: scroll;
+    position: relative;
+    /* scroll-behavior: smooth;  */
+}
+
+
+/* Navigation */
+.navbar {
+    
+    
+    font-size: 18px;
+    border: 1px solid #Dea17c(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    z-index:1; 
+    height: 115px;
+    width: 100%;
+    background-color: #FFFAF0;
+    
+
+   
+}
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+.nav-links {
+    text-decoration: none;
+    color:#984B17;
+   
+}
+.main-nav li {
+    text-align:center;
+    margin: 15px auto;
+    border-bottom: 1px solid #984B17;
+ 
+  
+}
+
+
+.logo {
+    
+    display:flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    align-items: center;
+
+
+    
+}
+
+
+.navbar-toggle {
+    position:absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    color:#984B17;
+    font-size: 30px;
+    text-align: right;
+}
+.active {
+    display:flex;
+    background-color:#FFFAF0;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+   
+
+ 
+}
+
+main{
+    margin-top: 100px;
+    background-color: #F2E0BB;
+}
+/* home page */
+.home{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* restaurant images */
+.tab, .web{
+    display: none;
+}
+.mob{
+    width: 100%;
+
+}
+.mob >img{
+    width: 100%;
+}
+
+.definition{
+        padding: 18px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+
+video{
+    
+    display: block;
+    margin: 1em auto;
+    width: 95%;
+   
+  
+}
+
+
+/* Gallery page */
+.gallery{
+    margin-top: 15px;
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.row {
+    padding: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+  }
+
+.column{
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+
+}
+.column >img{
+    padding-bottom: 10px;
+    
+}
+.book{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.book >p >a{
+    color:#984B17;
+    text-transform: uppercase;
+    font-weight: bold;
+   padding: 10px;
+   margin-top: 10px;
+   background-color:#EAC272;
+    
+    text-decoration: none;
+  
+    
+
+}
+/* Menu */
+
+
+
+
+.menu{
+    margin-top: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+
+
+}
+
+.intro >p >a{
+    color:black;
+    font-weight:bolder;
+   text-decoration: none;
+}
+
+/* services page */
+.services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2E0BB;
+    align-items: center;
+
+}
+.discreption{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  
+
+
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+   
+
+
+  
+}
+.service p{
+    justify-content: center;
+    background-color: #F4DAA5;
+    margin-top: 5px;
+}
+
+
+/* contact page */
+.contact-page{
+   
+    margin-top:15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.contact-us{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 10%;
+    margin-bottom: 2%;
+
+   
+}
+.title{
+    color: #9A4E30;
+}
+
+
+.form-wrapper > form{
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 5%;
+    color:#Dea17c;
+    
+}
+.form-wrapper > form  > input{
+    padding: 5px 2px;
+    width: 100%;
+    border: 2px solid #Dea17c;
+    border-radius: 10px;
+  
+  
+
+}
+.form-wrapper > form  >textarea {
+    border: 2px solid #Dea17c;
+    border-radius: 10px;
+    color: #3d3d3d;
+    resize: none;
+
+}
+.form-wrapper > form  > input.submit{
+
+
+    color: #9A4E30;
+    margin-top: 3%;
+  
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #Dea17c;
+    border-radius: 10px;
+   
+   
+  
+
+    
+}
+
+
+
+.find-us{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+   
+}    
+
+
+.map{
+    
+    margin: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center; 
+    align-items: center;
+   
+}
+
+
+/* aboutf page */
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.intro h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #9A4E30;
+}
+.person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.text{
+    background-color: #F4DAA5;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+.text p{
+
+padding: 5px;
+}
+  
+/* review page */
+.review{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    width: 100%;
+   
+   
+
+
+}
+
+.review .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+   
+
+ 
+
+
+}
+.review .box-container .box{
+    width: 500px;
+    background-color: #FFFAF0;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+
+}
+.review .profile{
+    display: flex;
+    align-items: center;
+}
+.review .name-user{
+    display: flex;
+    flex-direction: column;
+}
+.review .name-user >strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+
+}
+.review .name-user >span{
+    color:#979797;
+    font-size: 0.8rem;
+
+}
+.reviews{
+    color:#f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comment >p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+
+}
+.review .box:hover{
+    transform: translate(-10px);
+    transition: all ease 0.3s;
+}
+
+    
+
+.container{
+    position: relative;
+    width: 400px;
+    margin-bottom: 20px;
+    background-color: #EAC272; 
+  
+
+    padding: 20px 30px;
+    border: 1px solid #EAC272;
+
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .feedback{
+    font-size: 25px;
+    color: #984B17;
+    font-weight: 500;
+}
+.container .edit{
+    position:absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #984B17;
+    font-weight: 500;
+    cursor: pointer;
+}
+.container .edit:hover{
+    text-decoration: underline;
+}
+
+.container .star-widget input{
+    display:none;
+     
+}
+.container .star-widget label{
+    font-size: 40px;
+    color: #FFFAF0;
+    padding: 10px;
+    float: right;
+    transition: all ease 0.3s;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~  label:hover ~ label{
+    color: #fd4;
+
+}
+.star-widget input:checked ~ label{
+    color: #fd4;
+}
+input#rate-5:checked ~ label{
+    color: #fe4;
+    text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+    content: "I don't like it 😕 ";
+
+}
+#rate-2:checked ~ form header:before{
+    content: "It is ok 😐 ";
+
+}
+#rate-3:checked ~ form header:before{
+    content: "It is good 👍  ";
+
+}
+#rate-4:checked ~ form header:before{
+    content: "It is yammiii 😋 ";
+
+}
+#rate-5:checked ~ form header:before{
+    content: "I love it 😍";
+
+}
+.container form{
+    display: none;
+}
+input:checked ~ form{
+    display: block;
+}
+
+.container form header{
+    width: 100%;
+    font-size: 25px;
+   text-align: center;
+   color:#984B17;
+   transition: all 0.2s ease;
+}
+
+
+form .textarea{
+    
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+
+
+}
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #3d3d3d;
+    border: 1px solid #eee;
+    background: #FFFAF0;
+    font-size: 17px;
+    resize: none;
+}
+.container form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+   
+}
+.container form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #eee;
+    outline: none;
+    background: #FFFAF0;
+    color: #984B17;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.container form .btn button:hover{
+    background: #F4DAA5;
+    
+}
+
+
+
+
+
+
+
+
+
+/* Footer page */
+
+
+footer{
+    background:#FFFAF0;
+    display: flex;
+    flex-direction: column;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.opening-time{
+    display: flex;
+    flex-direction: column;
+   
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+ 
+ 
+
+}
+.information ul{
+
+    list-style: none;
+    text-align: center;
+    padding-left: 2px;
+
+}
+.details li a{
+   color: #984B17;
+   text-decoration: none;
+  
+    
+
+
+}
+
+h3{
+    color: #9A4E30;
+   align-items: center;
+   margin-bottom: 2px;
+
+}
+
+
+
+
+
+.media{
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.copy-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.copy-right .copyright{
+    font-size: 22px;
+    color: #984B17;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+   
+.social{
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 30px;
+     justify-content: space-evenly;
+
+}
+.social >a{
+    color:#Dea17c
+
+    
+
+}
+.social >a:hover{
+    transform:translate(-5px);
+    transition:all ease 0.3s;
+  
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        padding-right: 15px;
+        align-items: center;
+    }
+
+
+    .main-nav {
+        display: flex;
+        
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 33.33%;
+      
+    }
+
+    .main-nav li {
+        margin: 0;
+        border-bottom: unset;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+       
+      
+    }
+   
+    .logo {
+        
+        width: 40%;
+       
+    
+    }
+
+
+
+    .navbar-toggle {
+        display: none;
+    }
+    
+    .nav-links:hover {
+        color:#Dea17c;
+       
+    
+    }
+
+
+
+    .mob{
+        display: none;
+    }
+    .tab{
+        display: unset;
+        width: 100%;
+    }
+    .tab >img{
+        width: 100%;
+    }
+   
+    
+    .column{
+        flex-direction: row;
+        
+    }
+    .row{
+        padding-right: 20px;
+    }
+   
+    .column >img{
+        width: 21%;
+        padding-left: 10px;
+    }
+      
+   
+     
+
+    .column .menu_dish{
+        
+        padding-left: 20px;
+        width: 25%;
+      
+
+
+    } 
+    
+    .dish >img{
+        width: 100%;
+
+
+    }
+
+    .person{
+   
+        flex-direction: row;
+        width: 100%;
+        
+    
+    }
+    .picture{
+        width: 46%;
+        display: flex;
+        margin: 7%;
+       
+    
+     
+       
+    }
+    .text{
+        width: 46%;
+        margin-right: 2%;
+      
+        
+       
+     
+    
+      
+    }
+    .discreption{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    
+    
+    }
+    
+ 
+
+  
+    .map{
+        margin-bottom: 20px;
+        width: 100%;
+    
+    }
+    .information{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+    }
+    .opening-time{
+        display: flex;
+        flex-direction: column;
+       
+        
+     
+     
+        align-items: right;
+        justify-content: right;
+        text-align: center;
+        width: 45%;
+    
+    }
+    .information ul{
+    
+        list-style: none;
+        text-align: center;
+        padding-left: 2px;
+    
+    }
+    .details{
+        width: 45%;
+        
+        align-items: center;
+        justify-content: left;
+    
+    
+    }
+    
+    h3{
+        color: #9A4E30;
+       align-items: center;
+       margin-bottom: 2px;
+    
+    }
+    
+    
+    
+    
+    
+    .media{
+        margin: 10px;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .copy-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+    }
+    .copy-right .copyright{
+        font-size: 22px;
+        color: #984B17;
+        font-weight: bold;
+        font-family: 'Dancing Script', cursive;
+    }
+       
+    .social{
+       
+    
+        display: flex;
+        align-items: center;
+    
+        font-size: 30px;
+       
+    
+    }
+    .social >a{
+        color:#Dea17c;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        
+        
+    
+        
+    
+    }
+    .social >a:hover{
+        transform:translate(-5px);
+        transition:all ease 0.3s;
+      
+    }
+    
+
+
+}
+
+@media (min-width: 991px){
+    .contact-page{
+        flex-direction: row;
+        margin-bottom: unset;
+        
+    }
+    .contact-us{
+        width: 50%;
+        align-items: center;
+        margin-left: unset;
+    }
+    .find-us{
+        width: 50%;
+    }
+    .map{
+      align-items: center;  
+     justify-content: center;
+     width: 50%;
+     margin-top: 30px;
+    }
+
+
+
+   
+        
+        
+
+
+}
+@media (min-width: 1240px){
+    .staff{
+    
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    
+    
+        }
+        .person{
+            
+            width: 33%;
+            flex-direction: column;
+        
+           
+            }
+        
+        .text{
+          
+            width:unset;
+           text-align: center;
+           margin-right: unset;
+            margin-top: 5px;
+            margin-left: 2%;
+           
+          
+           
+        }
+        .picture{
+            width: unset;
+            display:unset ;
+            margin: unset;
+        }
+        
+
+}
